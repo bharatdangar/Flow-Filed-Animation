@@ -13,8 +13,8 @@ import gpgpuParticlesShader from './shaders/gpgpu/particles.glsl'
  */
 // Debug
 let gui;
-if (window.location.hash === '#debug') gui = new GUI({ width: 340 });
-const debugObject = {};
+if (window.location.hash === '#debug')  gui = new GUI({ width: 340 })
+const debugObject = {}
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -86,8 +86,6 @@ renderer.setClearColor(debugObject.clearColor)
  * Load model
  */
 const gltf = await gltfLoader.loadAsync('./model.glb')
- 
-
 
 /**
  * Base geometry
@@ -95,8 +93,6 @@ const gltf = await gltfLoader.loadAsync('./model.glb')
 const baseGeometry = {}
 baseGeometry.instance = gltf.scene.children[0].geometry
 baseGeometry.count = baseGeometry.instance.attributes.position.count
-
- 
 
 /**
  * GPU Compute
