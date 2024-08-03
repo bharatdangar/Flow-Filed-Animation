@@ -12,8 +12,9 @@ import gpgpuParticlesShader from './shaders/gpgpu/particles.glsl'
  * Base
  */
 // Debug
-let gui;
-if (window.location.hash === '#debug')  gui = new GUI({ width: 340 })
+// let gui;
+// if (window.location.hash === '#debug')  gui = new GUI({ width: 340 })
+const gui = new GUI({ width: 340 })
 const debugObject = {}
 
 // Canvas
